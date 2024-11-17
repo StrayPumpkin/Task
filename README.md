@@ -8,5 +8,5 @@
 
 [Fork与pull request](https://github.com/StrayPumpkin/Task/blob/main/Fork%E4%B8%8EPull%20request.md)
 ## 3
-[html]()
-[css]()
+[HTML](https://github.com/StrayPumpkin/Task/blob/master/HTML.md)
+[CSS]()
