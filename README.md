@@ -14,6 +14,6 @@
 
 [JS](https://github.com/StrayPumpkin/Task/blob/master/JavaScript.md)
 
-[人生第一次网页尝试！待加加加加强](https://github.com/StrayPumpkin/Task/blob/master/demo.html)
+[人生第一次网页尝试！待加加加加强(代码篇)](https://github.com/StrayPumpkin/Task/blob/master/demo.html)
 
-[网页dddddddemo](https://straypumpkin.github.io/)
+[网页dddddddemo（网页篇）](https://straypumpkin.github.io/)
