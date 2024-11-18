@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <style>
+        .title {
+            font-size: 100px;
+            text-align: center;
+            background-color: rgb(254, 254, 221);
+            display：inline-block;
+            margin：10px;
+            border-color: rgb(251, 252, 208);
+
+        }
+        .function{
+            line-height: 90px;
+            font-size: 20px;
+            text-align: left;
+            background-color: rgb(221, 244, 254);
+            display：inline-block;
+            position: fixed;
+        }
+        .content{
+            font-size: 20px;
+            text-align:center;
+            background-color: hsla(199, 59%, 90%, 0.449);
+            display：inline-block; 
+
+        }
+        .login{position: fixed;left 100px;bottom:550px;}
+        .mood{
+            width: 50px;
+            height: 30px;
+        } 
+
+    </style>
+</head>
+
+
+<body>
+    <div class="title">心情盒子</div>
+    <div class="function">
+创建日记<br>
+设置<br>
+心情日历<br>
+创建心情符号<br>
+分享此刻心情<br>
+共创心情日记<br>
+</div>
+<div class="content">
+    <form action=""> <input type="mood" placeholder="记录一下吧~" style="width: 800px;height: 200px;;background-color: hsla(199, 59%, 90%, 0.449);display：inline-block;margin：10px;border-color: rgb(251, 252, 208);"> </form>
+
+    <label for>内容是否公开</label><br>
+    <input type="radio" >是<br>
+    <input type="radio" >否<br><br>
+    <form action=""> <input type="diary" placeholder="标记你的心情" style=background-color:hsla(199,59%,90%,0.449);display：inline-block;margin：10px;border-color:rgb(251,252,208);"> </form>
+    > </form>
+</div>
+<div class="login"><form action="提交地址" method="post"> 
+    <label for="username">用户名：</label>
+     <input type="text" id="username" placeholder="请输入用户名"><br><br> 
+     <label for="pwd">密码</label>
+    <input type="password" id="pwd" placeholder="请输入密码"> <br><br>
+    <input type="submit" value="登录"></div>
+
+</body>
+</html>
