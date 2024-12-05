@@ -8,7 +8,9 @@
 
 点击个人头像能选择查看更多个人信息。
 
-![](https://raw.githubusercontent.com/StrayPumpkin/img/main/3.png)当点击热门仓库界面中的“查看更多”后，会进入一个“趋势"界面，里面有各种热门仓库。
+![](https://raw.githubusercontent.com/StrayPumpkin/img/main/3.png)
+
+当点击热门仓库界面中的“查看更多”后，会进入一个“趋势"界面，里面有各种热门仓库。
 
 ![ ](https://raw.githubusercontent.com/StrayPumpkin/img/main/2.png)
 
