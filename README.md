@@ -16,7 +16,7 @@
 
 [人生第一次网页尝试！待加加加加强(代码篇)](https://github.com/StrayPumpkin/Task/blob/master/demo.html)
 
-[网页dddddddemo（网页篇）](https://straypumpkin.github.io/)
+[网页dddddddemo（网页篇）](http://127.0.0.1:5500/demo.html)
 
 ## 4
 [geek复刻(代码篇）](https://github.com/StrayPumpkin/Task/blob/main/geek%E5%A4%8D%E5%88%BB.html)
