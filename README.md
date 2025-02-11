@@ -22,3 +22,11 @@
 [geek复刻(代码篇）](https://github.com/StrayPumpkin/Task/blob/main/geek%E5%A4%8D%E5%88%BB.html)
 
 [geek复刻(网页篇)](https://straypumpkin.github.io/)
+## 5
+[初识Go ]()
+
+[Go语法 ]()
+
+[一点点linux ]()
+
+[额外思考]()
