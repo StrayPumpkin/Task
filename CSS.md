@@ -168,6 +168,10 @@ ID选择器可以选择HTML文档中具有相同ID属性的元素，语法为“
 `margin：数值/百分比，是透明的，用来调整元素之间的距离。`
 
 ## 弹性盒模型
+<<<<<<< HEAD
+=======
+
+>>>>>>> a3686cab7157f1d12fa58536ce9d134cdd95cf59
 针对大盒子里的小盒子。在大盒子里设置`display: flex;`，默认是水平排列。
 
 ### 父元素属性
@@ -191,6 +195,10 @@ ID选择器可以选择HTML文档中具有相同ID属性的元素，语法为“
 `flex-grow：数值，根据权重分配剩余空间。设置了flex后宽度失效。`
 
 ## 浮动
+<<<<<<< HEAD
+=======
+
+>>>>>>> a3686cab7157f1d12fa58536ce9d134cdd95cf59
 浮动可以使元素脱离文档流，并向左或向右移动，不能向上或向下移动直到遇到另一个浮动元素或碰到父元素的边框。  
 
 `float：left/right/none。`
@@ -201,6 +209,7 @@ ID选择器可以选择HTML文档中具有相同ID属性的元素，语法为“
 - 方法二：父元素设置`overflow：hidden`。
 - 方法三：受影响元素设置`clear：both`。
 
+<<<<<<< HEAD
 ## 定位
 定位可以将元素从文档流中移除，并相对于其包含块进行定位。  
 
@@ -223,6 +232,38 @@ ID选择器可以选择HTML文档中具有相同ID属性的元素，语法为“
 `top/bottom/left/right：数值/百分比`
 
 ### z-index层级
+=======
+清除浮动可以解决浮动元素的高度塌陷问题。
+
+- 方法一：父元素设置高度。
+- 方法二：父元素设置`overflow：hidden`。
+- 方法三：受影响元素设置`clear：both`。
+
+## 定位
+
+定位可以将元素从文档流中移除，并相对于其包含块进行定位。  
+
+`position：static/relative/absolute/fixed`
+
++ ***relative相对定位***
+
+相对定位可以相对于元素自身进行定位，没有脱离文档流。  
+
+`top/bottom/left/right：数值/百分比`
+
++ ***absolute绝对定位***
+
+绝对定位可以相对于距离最近的已定位祖先元素进行定位，脱离文档流，每设置一个定位属性，就多一层。  `top/bottom/left/right：数值/百分比`
+
++ ***fixed固定定位***
+
+固定定位可以相对于浏览器窗口进行定位，脱离文档流。  
+
+`top/bottom/left/right：数值/百分比`
+
+### z-index层级
+
+>>>>>>> a3686cab7157f1d12fa58536ce9d134cdd95cf59
 `z-index：数值，越大越在前面。`
 
 ## 新特性
@@ -264,6 +305,10 @@ ID选择器可以选择HTML文档中具有相同ID属性的元素，语法为“
 + opacity表示透明度，0~1，1表示完全不透明。
 
 ### 媒体查询
+<<<<<<< HEAD
+=======
+
+>>>>>>> a3686cab7157f1d12fa58536ce9d134cdd95cf59
 可以针对不同的屏幕尺寸设置不同的样式。  在head标签里添加meta标签。  
 
 媒体类型：all/screen/print。  
@@ -279,6 +324,10 @@ ID选择器可以选择HTML文档中具有相同ID属性的元素，语法为“
 ```
 
 ### 字体图标
+<<<<<<< HEAD
+=======
+
+>>>>>>> a3686cab7157f1d12fa58536ce9d134cdd95cf59
 推荐：[阿里字体图标库](https://www.iconfont.cn/)  
 
 选择下载代码。  
@@ -286,10 +335,20 @@ ID选择器可以选择HTML文档中具有相同ID属性的元素，语法为“
 推荐用 font class 方式使用字体图标，可以自定义颜色和大小。
 
 1. 引入生成的fontclass代码
+<<<<<<< HEAD
    ```html
    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1674484_67y171191.css">
 
 2. 挑选相应的图标并获取类名，应用于页面。
+=======
+
+   ```html
+   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1674484_67y171191.css">
+   ```
+
+2. 挑选相应的图标并获取类名，应用于页面。
+
+>>>>>>> a3686cab7157f1d12fa58536ce9d134cdd95cf59
    ```html
    <span class="iconfont icon-xxx"></span>
    ```
