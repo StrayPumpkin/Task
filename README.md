@@ -23,10 +23,10 @@
 
 [geek复刻(网页篇)](https://straypumpkin.github.io/)
 ## 5
-[初识Go ]()
+[一点点linux ](https://github.com/StrayPumpkin/Task/blob/master/linux%E7%AE%80%E7%AE%80%E7%AC%94%E8%AE%B0.md)
 
-[Go语法 ]()
+[初识Go ](https://github.com/StrayPumpkin/Task/blob/master/Go%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F.md)
 
-[一点点linux ]()
+[Go语法 ](https://github.com/StrayPumpkin/Task/blob/master/Go.md)
 
-[额外思考]()
+[额外思考](https://github.com/StrayPumpkin/Task/blob/master/Go%E6%98%AFoop.md)
