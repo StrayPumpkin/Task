@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "22990321",
+      "name": "shu-smiling-face",
+      "font_class": "shu-smiling-face",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "22990324",
+      "name": "neutral-face",
+      "font_class": "neutral-face",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "22990339",
+      "name": "angry-face",
+      "font_class": "angry-face",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "22990341",
+      "name": "beaming-face",
+      "font_class": "beaming-face",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "22990346",
+      "name": "sleeping",
+      "font_class": "sleeping",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "22990349",
+      "name": "frowning-face",
+      "font_class": "frowning-face",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "22990350",
+      "name": "shock",
+      "font_class": "shock",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "22990357",
+      "name": "sad-facebut-releived",
+      "font_class": "sad-facebut-releived",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    }
+  ]
+}

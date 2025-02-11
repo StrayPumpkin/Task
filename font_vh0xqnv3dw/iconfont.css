@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1733499227893') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 60px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shu-smiling-face:before {
+  content: "\e655";
+}
+
+.icon--shu-smiling-face:before {
+  content: "\e656";
+}
+
+.icon-angry-face:before {
+  content: "\e658";
+}
+
+.icon-beaming-face:before {
+  content: "\e659";
+}
+
+.icon-sleeping:before {
+  content: "\e65a";
+}
+
+.icon-frowning-face:before {
+  content: "\e65b";
+}
+
+.icon-shockb-face:before{
+  content: "\e65c";
+}
+
+.icon-sad-facebut-releived:before {
+  content: "\e65d";
+}
+
