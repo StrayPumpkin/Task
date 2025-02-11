@@ -29,4 +29,6 @@
 
 [Go语法 ](https://github.com/StrayPumpkin/Task/blob/master/Go.md)
 
+[godemo](https://github.com/StrayPumpkin/Task/blob/master/Godemo.go)
+
 [额外思考](https://github.com/StrayPumpkin/Task/blob/master/Go%E6%98%AFoop.md)
