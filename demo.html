@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心情盒子</title>
+    <link rel="stylesheet" href="./font_vh0xqnv3dw/iconfont.css">
+    <style>
+        /* 导航栏初始化 */
+.nav {
+    height: 100vh;
+    width: 15%;
+    background-image: url(https://raw.githubusercontent.com/StrayPumpkin/img/main/d03e96b8-f146-4e64-9db0-a920ff498749.jpg);
+    background-size: cover;
+    background-position: 65% 0;
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+}
+    /* 导航栏按钮 设置盒子模型 */
+    .nav button{
+        background-color: #ffffff00;
+        height: 20%;     
+        font-size: 25px;
+        position: relative;
+        border: none;
+    }
+    a{
+            text-decoration: none;
+            color: #000000;
+
+
+        }
+        a:hover{color: #00000050;}
+    .homepage {
+        width: 85%;
+        height: 100vh;
+        margin-left: 15%;
+        background-image: url(https://raw.githubusercontent.com/StrayPumpkin/img/main/QQ图片20241206215501.png);
+        background-size:cover;
+        background-position: center;
+        color: #000000;
+
+    }   
+.title1{        font-size: 1000%;
+        text-align: center;
+        padding-top: 10px;
+        transition: transform 0.5s;}
+     .title1:hover{transform: scale(1.2);} 
+.calendar{ position: relative;
+        font-size: 100%;
+        padding-top: 10px;
+        color: #000000;
+        width: 85%;
+        height: 100vh;
+        margin-left: 15%;
+        background-image: url(https://raw.githubusercontent.com/StrayPumpkin/img/main/61e5b7c0-2175-41c7-8f6e-5c0efc79b66d.jpg);
+        background-size: cover;
+        background-position: 0 15%;
+
+    }
+    .title2{font-size: 500%;
+        text-align: center;
+        padding: 10px 0;
+        transition: transform 0.5s;}
+     .title2:hover{transform: scale(1.2);} 
+table{ 
+    width: 85%;
+        height: 80vh;
+margin-left:7.5%;}
+.selection{
+    display: flex;
+width: 100%;
+
+
+}
+.mood{ 
+     font-size: 100%;
+        padding-top: 10px;
+        color: #000000;
+        width: 100%;
+        height: 82%;
+        border-radius:10px;
+        border:  5px solid #888888;
+        background-color: #fff19f70;}
+.couple1 img{
+        width: 315px;
+        height: 300px;;}
+
+.couple2 img{ 
+   margin-left:  10px;
+    width: 315px;
+    height: 300px;
+}
+.rest
+
+{
+    width:100%;
+    height: 150px;
+    margin-top: -45px;
+    margin-left: 0.1%;
+   background-image: url(https://raw.githubusercontent.com/StrayPumpkin/img/main/rest.jpg);
+    background-size: cover;
+    background-position: center;}
+
+.diary{
+    width:85%;
+    height: 500px;
+    border-radius:10px;
+    box-shadow: 3px 3px 10px #888888;
+    border:  5px solid #888888;
+    margin-left: 15%;
+    margin-top: 445px;
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    background-color: #fffed086;
+    background-image: url(https://raw.githubusercontent.com/StrayPumpkin/img/main/text.jpg);
+            background-size: cover;
+            background-position: center;
+
+}
+
+    .title3{
+        padding: 10px;
+        font-size: 300%;
+        transition: transform 0.5s;}
+     .title3:hover{transform: scale(1.1);} 
+     textarea {
+            width: 800px;;
+            height: 250px; 
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 20px;
+            opacity: 0.95;
+
+
+        }
+        .create
+        { 
+        position: relative;
+        width:80%;
+        height:400px;
+        margin-left: 18%;
+        margin-top: 50px;
+        border-radius:10px;
+        box-shadow: 3px 3px 10px #888888;
+        border:  3px solid #888888;
+        display:flex;
+        flex-direction:column;
+        transition: transform 0.5s;
+        background-color: #fffed086;
+        background-image: url(https://raw.githubusercontent.com/StrayPumpkin/img/main/invites.jpg);
+            background-size: cover;
+            background-position: 0  70%;
+
+   }
+   botton{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+    }
+    botton:hover{
+        background-color: #929191;
+        color: #000000;
+    }
+   
+   .title4{
+    margin-left: 10%;
+        padding: 10px;
+        font-size: 300%;
+        transition: transform 0.5s;}
+     .title4:hover{transform: scale(1.1);} 
+     .invite{ width: auto;
+        height: 50px;
+        padding: 50px;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        border: #ffffff;
+        border-radius: 10px;
+        background-color: #ffffff;
+        color: #000000;
+        opacity: 0.8;
+    }
+    .upload
+        { 
+        position: relative;
+        width:80%;
+        height:400px;
+        margin-left: 18%;
+        margin-top: 50px;
+        border-radius:10px;
+        box-shadow: 3px 3px 10px #888888;
+        border:  3px solid #888888;
+        display:flex;
+        flex-direction:column;
+        transition: transform 0.5s;
+        background-color: #fffed086;
+        background-image: url(https://raw.githubusercontent.com/StrayPumpkin/img/main/invitation.jpg);
+            background-size: cover;
+            background-position: 0  53%;
+
+   }
+
+   .title5{
+    margin-left: 10%;
+        padding: 10px;
+        font-size: 300%;
+        transition: transform 0.5s;}
+     .title5:hover{transform: scale(1.1);} 
+     .load{ width: auto;
+        height: 50px;
+        padding: 50px;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        border: #ffffff;
+        border-radius: 10px;
+        background-color: #ffffff;
+        color: #000000;
+        opacity: 0.8;
+    }
+        </style>
+</head>
+
+<body>
+    <div class="nav">
+        <button><a href="#homepage">首页</a></button>
+        <button><a href="#calendar">心情日历</a></button>
+        <button><a href="#diary">创建日记</a></button>
+        <button><a href="#create">共创心情日记</a></button>
+        <button><a href="#upload">自定义表情</a></button>  
+      
+    </div>
+
+<<<<<<< HEAD
+    <div class="homepage" id="homepage"><div class="title1">心情盒子</div></div>
+    <div class="calendar" id="calendar"><div class="title2">心情日历</div><table border="2">
+        <thead> 
+            <tr>
+ 
+             <th>周一</th>
+             <th>周二</th>
+             <th>周三</th>
+             <th>周四</th>
+             <th>周五</th>
+             <th>周六</th>
+             <th>周日</th>
+            </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+      </tbody>
+    </table>
+=======
+    <label for>内容是否公开</label><br>
+    <input type="radio" >是<br>
+    <input type="radio" >否<br><br>
+    <form action=""> <input type="diary" placeholder="标记你的心情" style=background-color:hsla(199,59%,90%,0.449);display：inline-block;margin：10px;border-color:rgb(251,252,208);"> </form>
+     </form>
+</div>
+<div class="login"><form action="提交地址" method="post"> 
+    <label for="username">用户名：</label>
+     <input type="text" id="username" placeholder="请输入用户名"><br><br> 
+     <label for="pwd">密码</label>
+    <input type="password" id="pwd" placeholder="请输入密码"> <br><br>
+    <input type="submit" value="登录"></div>
+>>>>>>> a3686cab7157f1d12fa58536ce9d134cdd95cf59
+
+<div class="selection">
+    <div class="couple1"><img src="https://raw.githubusercontent.com/StrayPumpkin/img/main/left.jpg"> </div>
+   <div> <form action="提交地址" method="post" class="mood"> 
+    <label style="font-size: 30px;" for="">——选择你的今日心情吧</label><br><br>
+    <input type="checkbox" name="mood"><span class="iconfont icon-shu-smiling-face ">    </span>
+    <input type="checkbox" name="mood"><span class="iconfont icon--shu-smiling-face">   </span>
+    <input type="checkbox" name="mood"><span class="iconfont icon-angry-face ">  </span>
+    <input type="checkbox" name="mood"><span class="iconfont icon-beaming-face ">    </span><br><br>
+    <input type="checkbox" name="mood"><span class="iconfont icon-sleeping ">    </span>
+    <input type="checkbox" name="mood"><span class="iconfont icon-frowning-face ">   </span>
+    <input type="checkbox" name="mood"><span class="iconfont icon-shockb-face "> </span>
+    <input type="checkbox" name="mood"><span class="iconfont icon-sad-facebut-releived ">    </span><br><br>
+    <input type="submit" > <br><br><br>
+  </form></div>
+      <div class="couple2"><img  src="https://raw.githubusercontent.com/StrayPumpkin/img/main/right.jpg"> </div>
+</div>
+
+<div class="rest"></div>
+</div>
+<div class="diary"id="diary">
+    <div class="title3">创建日记</div>
+    <div > <form action="提交地址" method="post">
+        <label for="longText"></label><br>
+        <textarea id="longText" name="longText" placeholder="记录一下吧~"></textarea><br>
+        <input type="submit" value="提交">
+      </form></div>
+</div>
+
+      <div class="create"id="create">
+        <div class="title4">共创心情日记</div>
+        <div class="invite">快邀请好友一起记录心情吧~</div>
+
+     <botton>邀请</botton>
+</div>
+<div class="upload"id="upload">
+    <div class="title5">自定义表情</div>
+    <div class="load">上传属于你的表情仓库吧~</div>
+
+ <botton>上传</botton>
+</div>
+</body>
+</html>

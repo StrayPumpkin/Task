@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>geeek复刻</title>
+    <link rel="stylesheet" href="./font_xl76jkhlyc9/iconfont.css">
+<style>
+   
+ 
+/* 导航栏初始化 */
+.nav {
+    height: 40px;
+    width: 99%;
+    background-color: #ffc000;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+}
+
+    /* 导航栏按钮 设置盒子模型 */
+    .nav button{
+        height: 40px;   
+        width: 20%;
+        border-radius: 10px;
+        line-height: 40px;
+        font-size: 25px;
+        position: relative;
+        background-color: #ffc000;
+        border: none;
+    }
+   
+        /* 导航栏按钮样式 */
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        a:hover {
+            background-color:  #ff8c00;;
+            color:#808080;
+        }
+       
+        button:hover {
+            background-color:  #ff8c00;
+            color:#808080;
+        }
+            /* introduction按钮的二维码显示效果*/
+            .qrcode {
+                position: absolute;
+                top: 40px;
+                left: 0;
+                width: 100%;
+                height: auto;
+                opacity: 0;
+                transition: opacity 0.3s;
+                z-index:1;
+             }
+            .introduction:hover .qrcode {opacity: 1;}
+
+ /* 主页面 */
+.homepage {     
+        position: relative;
+        background-image: url(https://raw.githubusercontent.com/StrayPumpkin/img/main/background_Homepage.png);
+        background-size: cover;
+        height: 100vh; 
+        width: 100%; 
+        top:40px;
+        display: flex; 
+        justify-content: center;
+
+}   
+    /* logo变形 */
+    .logo{
+        position: absolute;
+        background-image: url(https://raw.githubusercontent.com/StrayPumpkin/img/main/decoration_Geek.png);
+        background-size: cover;
+        width: 400px;
+        height: 205px;
+        top: 100px; 
+        transition: transform 0.5s;
+    }    
+    .logo:hover{
+            transform: scale(1.5); 
+            transition: transform 0.5s; 
+    }
+ /* 过度效果图 */
+.transition{
+        margin-top: 40px;
+        position: relative;
+        width: 100%;
+        height: 100px;
+        background-size: cover;
+        background-image:url(https://raw.githubusercontent.com/StrayPumpkin/img/main/decoration_Transition.png);
+}
+    /* introduction标题*/
+   .text1{
+        position: absolute;
+        font-size: 50px;
+        color: #00008b;
+        font-weight: bold;
+        width: 100%;
+        height: 100px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+/* introduction初始化 */
+.introduction-text{
+                position: relative;
+                width: 100%;
+                height: auto;
+                display:flex;
+                flex-direction: column;
+                justify-content:center;
+                } 
+    /* FB */
+    .FB{
+        position: relative;
+        width:80%;
+        height:auto;
+        top: 50px;
+        border-radius:10px;
+        box-shadow: 3px 3px 10px #888888;
+        border:  3px solid #888888;
+        margin: 2% 10%; 
+        display:flex;
+        align-items:flex-start;
+        transition: transform 0.5s;
+    }
+    .FB:hover{
+        transform: scale(1.1); 
+    }
+        /* FB图片效果 */
+        .FB-img { 
+            position: relative;
+            width: 70%;
+            padding: 15px; 
+            left:43%;
+            transition: transform 0.5s; 
+        }
+        .FB-img :hover{
+                    transform: rotatez(-20deg);
+        }
+        /* FB文本 */
+        .FB-text {
+                position: relative;
+                width: 80%;
+                height: auto;
+                right: 40%;
+                padding: 10px;
+                font-size: 20px
+        }
+    /* PM */
+    .PM{
+        position: relative;
+        width:80%;
+        height:auto;
+        top: 50px;
+        border-radius:10px;
+        box-shadow: 3px 3px 10px #888888;
+        border:  3px solid #888888;
+        margin: 2%  10%;
+        display:flex;
+        align-items:flex-start;
+        transition: transform 0.5s; 
+        }
+    .PM:hover{
+        transform: scale(1.1); 
+    }  
+        /* PM图片效果 */
+        .PM-img { 
+                position: relative;
+                width: 70%;
+                padding: 20px;
+                transition: transform 0.5s; 
+        }
+        .PM-img :hover{ 
+                    transform: rotatez(20deg); 
+        }
+        /* PM文本 */
+        .PM-text {
+                position: relative;
+                width: 80%;
+                height: auto;
+                right:5%; 
+                padding: 10px;
+                font-size: 20px;
+        }
+    /* UNITY */
+    .UNITY{ 
+          position: relative;
+          width:80%;
+          height:auto;
+          top: 50px;
+          border-radius:10px;
+          box-shadow: 3px 3px 10px #888888;
+          border:  3px solid #888888;
+          margin: 2%  10%;
+          display:flex;
+          align-items:flex-start;
+          transition: transform 0.5s;
+          }
+   .UNITY:hover{
+               transform: scale(1.1);
+               }
+        /* UNITY图片效果 */
+        .UNITY-img { 
+                position: relative;
+                width: 75%;
+                padding: 10px; 
+                left:40%;
+                transition: transform 0.5s; 
+        }
+        .UNITY-img :hover{
+                        transform: rotatez(-20deg); 
+        }
+        /* UNITY文本 */
+        .UNITY-text {
+                position: relative;
+                width: 80%;
+                height: auto;
+                right: 40%;
+                padding: 10px;
+                font-size: 20px;
+        }   
+    /* SAFE */
+    .SAFE{ 
+        position: relative;
+        width:80%;
+        height:auto;
+        top: 50px;
+        border-radius:10px;
+        box-shadow: 3px 3px 10px #888888;
+        border:  3px solid #888888;
+        margin: 2%  10%;
+        display:flex;
+        align-items:flex-start;
+        transition: transform 0.5s
+   }
+   .SAFE:hover{
+        transform: scale(1.1);
+    }
+        /* SAFE图片效果 */
+        .SAFE-img { 
+            position: relative;
+            width: 75%;
+            padding: 20px; 
+            transition: transform 0.5s; 
+            top: 10px;
+        }
+        .SAFE-img :hover{
+            transform: rotatez(20deg); 
+        }
+        /* safe文本 */
+        .SAFE-text {
+            position: relative;
+            width: 80%;
+            height: auto;
+            right: 5%;
+            padding: 10px;
+            font-size: 20px;}
+/* about us初始化 */
+.aboutus-text{
+    position: relative;
+    width:90%;
+    height: 500px;
+    border-radius:10px;
+    box-shadow: 3px 3px 10px #888888;
+    border:  5px solid #888888;
+    margin: 10% 5% ; 
+    display:flex;
+    background-color: #fffed086;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index:100;}
+    /* about us标题 */
+    .text2{
+        position: absolute;
+        font-size: 50px;
+        color: #b8b8bb;
+        font-weight: bold;
+        width: 100%;
+        height: 100px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+        /* 小蝴蝶效果 */
+        .Butterfly:hover{  transform: translate(0,10px); }
+        /* speech效果*/
+        .speech{
+            position:relative;
+            width: 20%;
+            height: 320px;
+            top: 70px;
+            border-radius:10px;
+            border:  3px solid  #880066;
+            margin: 2% 2%;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            background-color:#fffed086;
+            font-size: 20px;
+            transition: transform 0.5s;
+        }
+        .speech:hover{
+            transform: scale(1.1);
+        }
+            .speech-img{
+                position: relative;
+                width: 100px;;
+                height: auto;
+                margin: 2% 25%;
+                display: flex;
+            }
+        /* diversity初始化*/
+        .diversity{
+            position: relative;
+            width: 20%;
+            height: 320px;
+            top: 70px;
+            border-radius:10px;
+            border:  3px solid  #880066;
+            margin: 2% 2%;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            background-color: #fffed086;
+            font-size: 20px;
+            transition: transform 0.5s; 
+        }
+        .diversity:hover{
+            transform: scale(1.1);
+    }
+         /* diversity图片效果 */
+        .diversity-img{
+            position: relative;
+            width: 100px;
+            height: auto;
+            margin: 2% 25%;
+            display: flex;
+        }
+        /* time初始化 */
+        .time{
+            position: relative;
+            width: 20%;
+            height: 320px;
+            top: 70px;
+            border-radius:10px;
+            border:  3px solid  #880066;
+            margin: 2% 2%;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            background-color:#fffed086;
+            font-size: 20px;
+            transition: transform 0.5s;
+        }
+        .time:hover{
+        transform: scale(1.1); 
+        transition: transform 0.5s; 
+        }
+            /* time图片效果 */
+            .time-img{
+                position: relative;
+                width: 100px;
+                height: auto;
+                margin: 2% 25%; 
+                display: flex;
+
+            }
+/* contact us初始化 */
+.contactus-text{ 
+    position: relative;
+    width:90%;
+    height: 550px;
+    border-radius:10px;
+    border:  6px solid #006633;
+    margin: 10% 5%  ; 
+    display:flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index:100;
+    }
+    /* contactus标题 */
+    .text3{
+        z-index:100;
+        position: absolute;
+        font-size: 50px;
+        color: #b8b8bb;
+        font-weight: bold;
+        width: 100%;
+        height: 100px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        top: 0;
+    }
+    /* 小按钮初始化 */
+    .sth {
+        position: relative;
+        height: auto;
+        width: 100%;
+        font-size: 20px;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction:row;
+    }
+        /* 小按钮样式 */
+        .sth button{ 
+            height: 30px;   
+        width: 15%;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px #888888;
+        margin: 0  2%;
+        position: relative;
+        background-color: #009966;
+        left: 20%;
+        font-size: large;
+        transition: transform 0.5s;
+        background-color: #009966;
+        }
+        .sth button:hover{ transform: scale(1.1); }
+        /* 复制小飘窗 */
+        .message{
+            position: relative;
+            width: 30%;
+            height: 150px;
+            border-radius: 10px;
+            margin: 0 38%;
+            color: #888888;
+        }
+        /* 给GitHub按钮上色 */
+        #github{color: #000000;}
+        #github:hover{
+            color: #000000;
+            background-color: #009966; 
+        }
+/* Q&A初始化 */
+.MoreQuestions{   
+    background-image: url(https://raw.githubusercontent.com/StrayPumpkin/img/main/background_QA.png);
+    border: 6px solid #0074d9;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0% 5%;
+}
+    /* q&a标题 */
+    .text4{
+        position: relative;
+        font-size: 50px;
+        color: #b8b8bb;
+        font-weight: bold;
+        width: 100%;
+        height: 100px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+        .question{
+            font-size: x-large ;
+            line-height: 80px;
+            margin:  0 20%;
+
+        }
+        /* question效果 */
+        .q{   
+        transition: transform 0.5s;
+        }
+        .q:hover{  
+            transform: scale(1.1);
+            color: #808080;
+        }
+        /* 点击q显示a效果 */
+        .hidden {
+            display: none; /* 隐藏内容 */
+        }
+        .visible {
+            display: block; /* 显示内容 */
+            border-radius: 10px;
+            background-color: #0074d91d;
+            padding: 20px;
+            color:#ffffff;
+            font-size: 20px;
+            line-height: 50px;
+        }
+</style>
+</body>
+</html>
+
+<body>
+    <div class="all">
+
+<!-- 导航栏 -->
+
+<div class="nav">
+
+    <button class="introduction">
+        <a href="#introduction-text" >Introduction <span class="iconfont icon-a-xiala2"></span></a>  
+        <img class="qrcode" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/qrcode_1699620268564.jpg" alt="">
+    </button>
+    <button class="About Us">
+        <a href="#aboutus-text" >About Us <span class="iconfont icon-xiaoren"></span></a>
+    </button>
+    <button class="NewThread">
+        <a href="https://campus.new-thread.com/" target="_blank">NewThread <span class="iconfont icon-shouye"></span></a>
+    </button>
+    <button class="Contact Us">
+        <a href="#contactus-text">Contact Us <span class="iconfont icon-dianhua"></span></a>
+    </button>
+    <button class="Q&A">
+        <a href="#MoreQuestions" >Q&A <span class="iconfont icon-V"></span></a>
+    </button>
+    
+</div>
+
+<!-- 首页   -->
+
+<div class="homepage">
+    <div class="logo"></div>
+</div>
+
+<!-- 过渡效果 -->
+
+<div class="transition"><div class="text1">Introduction <span style="font-size:40px;" class="iconfont icon-a-xiala2"></span></div></div>
+    
+<!-- 内容介绍 -->
+<!-- introduction -->
+<div id="introduction-text" class="introduction-text">
+    <!-- FB -->
+    <div class="FB">
+        <div class="FB-img">
+            <img class="FB-img" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/Geek_Programmer.png"">
+        </div>
+        <div class="FB-text">
+            <h1>开发程序猿</h1>
+            <h2 style="color: #0072c6">“Stay Hungry，Stay Foolish”</h2>
+            <p>前端: 前端开发是创建Web或app视觉界面呈现给用户的过程通过HTML，CSS及JavaScript以及衍生出来的各种技术、框架、解决方案，实现互联网产品的用户界面交互。</p>
+            <P>后端：通常也称服务器端开发。不对用户显示,负责处理前端的请求，进行逻辑处理和数据交互。 客户端: 移动应用开发是为了小型、无线计算设备编写软件的流程和程序的集合，例如智能手机或平板电脑。</P>
+        </div>
+    </div>
+    <!-- PM -->
+    <div class="PM">
+        <div class="PM-img">
+            <img class="PM-img" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/Geek_PM.png">
+        </div>
+        <div class="PM-text">
+            <h1>产品经理</h1>
+                <h2 style="color: #ff69b4">"好的软件的特征是,明明没用过，但总觉得用过似的。"</h2>
+                    <p> PM是针对某一项或是某一类的产品进行规划和管理的人员。 PM需要拥有缜密的产品逻辑思维，研究用户心理，负责产品的整个生命周期。PM参与产品的UI和交互设计，为设计和开发确定产品原型，能够将产品变得有个性,操作变得舒适简单、自由。 PM需要一定的文档能力和沟通能力，能够在团队合作的过程中跟各个角色进行有效沟通。 </p>
+        </div>
+    </div>
+    <!-- UNITY -->
+    <div class="UNITY">
+        <div class="UNITY-img">
+            <img class="UNITY-img" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/Geek_Game.png">
+        </div>
+        <div class="UNITY-text">
+            <h1>游戏开发</h1>
+                <h2 style="color: #00bfa5">"TECH OTAKUS SAVE THE WORLD"</h2>
+                    <P>对游戏开发的热爱和追求，使我们相聚于此。 涉及计算机图形学的学习，我们使用物理模拟引擎Unity开发我们所追求的世界，一个故事，一个角色，在我们的世界里改变现实，创造新的可能，我们参与，我们改变，我们创造...</P>
+        </div>
+    </div>
+    <!-- SAFE -->
+    <div class="SAFE">
+        <div class="SAFE-img">
+            <img class="SAFE-img" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/Geek_security.png"">
+        </div>
+        <div class="SAFE-text">
+            <h1>安全</h1>
+                <h2 style="color: #ffa0c4">"路漫漫其修远兮，非大毅力者不能"</h2>
+                    <p> 我们主要学习Web安全和二进制安全。在Web安全中我们将学习和实践Web漏洞挖掘技术，也将探索和讨论Web安全实践的方法。在二进制安全中我们专注于分析和防御与计算机程序、系统相关的威胁，同时实践漏洞分析和修补。耐心和钻研缺一不可。用户显示,负责处理前端的请求，进行逻辑处理和数据交互。 客户端: 移动应用开发是为了小型、无线计算设备编写软件的流程和程序的集合，例如智能手机或平板电脑。</P>
+        </div>
+    </div>
+</div>
+<!-- about us -->
+<div id="aboutus-text" class="aboutus-text">
+    <img style="width: 20%; height: auto;top:0;left:0;position: absolute;"src="https://raw.githubusercontent.com/StrayPumpkin/img/main/decoration_Decoration.png" alt="">
+    <img style="width: 20%; height: auto;bottom:0;left:0;position: absolute;" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/decoration_Decoration.png" alt="">
+    <img style="width: 20%; height: auto;top:0;right:0;position: absolute;" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/decoration_Decoration.png" alt="">
+    <img style="width: 20%; height: auto;bottom:0;right:0;position: absolute;" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/decoration_Decoration.png" alt=""> 
+    <img class="Butterfly"style="transition: transform 0.5s; /* 恢复时的过渡时间 */ width:15%; height: auto;bottom: 10px;;right:0;position: absolute;"src="https://raw.githubusercontent.com/StrayPumpkin/img/main/decoration_Butterfly.png" alt=""> 
+
+    <div class="text2">About Us  <span style="font-size:40px;" class="iconfont icon-xiaoren"> </span></div>
+    <!-- speech -->
+    <div class="speech">
+    <img class="speech-img" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/about_Speech.png">
+    <div style="margin: 5%  3%;">每周我们会举行一次技术例会，用来汇报我们的学习内容，供成员之间交流学习。</div>
+    </div>
+    <!-- diversity -->
+    <div class="diversity">
+    <img class="diversity-img" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/about_Diversity.png" alt="">
+    <div style="margin: 5% 3%;">多元化是我们的特色。在这里，你可以拥有多种方向选择，前后端、安全、AI、产品/设计、游戏等。</div>
+    </div>
+    <!-- time -->
+    <div class="time">
+    <img class="time-img" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/about_Time.png" alt="">
+    <div style="margin: 5% 3% ">耐心、毅力是我们必备的品质，每周我们会至少花30小时在实验室中。以保证技术的精进。</div>
+    </div>
+
+</div>
+
+<!-- contact us -->
+ <div id="contactus-text" class="contactus-text">
+    <img style="width: 20%; height: auto; top: 0; left: 0; position: absolute;" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/decoration_TreeWithSometing.png" alt=""> 
+    <img style="width: 15%; height: auto; top: 0; right: 0; position: absolute;" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/decoration_Tree.png" alt=""> 
+    <img style="width: 10%; height: auto; bottom: 0; left: 0; position: absolute;" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/decoration_Ladybug.png" alt=""> 
+    <img style="width: 30%; height: auto; bottom: -30px; right: 10%; position: absolute;" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/decoration_Chameleon.png" alt=""> 
+    <img style="width: 5%; height: auto;top:50px;left: 300px;position: absolute;" src="https://raw.githubusercontent.com/StrayPumpkin/img/main/decoration_Leaves.png"" alt=""> 
+    <div class="text3">Contact Us  <span style="font-size:40px;" class="iconfont icon-dianhua"></span></div>
+    <!-- 主干 -->
+    <div style=" margin: 0 20%;font-size: x-large; line-height: 80px;top: 100px;position: relative;">
+        <ul>
+            <li>热爱计算机，具有geek精神，喜欢DIY，动手能力较强</li>
+            <li>有编程/算法/硬件基础为佳(有作品可附上)</li>
+            <li>有足够的空余时间，热爱思考，对事物有自己的见解</li>
+        </ul>
+    </div>
+    <!-- ps -->
+    <div style=" margin: 6%  20% ; width: 60%;color: #b8b8bb;position: relative;">
+        ps:非新思路统招只有通过发送邮件自我介绍后，收到邮件回执后才会被允许进群,在读学生, 都可邮件到newthread_geek@outlook.com报名加入.(信中需备注个人基本信息以及意向方向,此招新活动为长期招新)
+    </div>
+    <!-- 小按钮 -->
+    <div class="sth">
+        <button class="QQ-group">QQ-group</button>
+        <button id="E-mail" class="E-mail">E-mail</button>
+        <button class="Github">
+            <a id="github" href="https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click" target="_blank">Github</a></buttom> 
+    </div>
+    <div id="message" class="message"></div>
+</div>
+<!-- 复制邮箱及其飘窗 -->
+<script>
+    document.getElementById('E-mail').addEventListener('click', function() {
+        const contentToCopy = 'newthread_geek@outlook.com'; // 要复制的内容
+        navigator.clipboard.writeText(contentToCopy) // 使用 Clipboard API 复制到剪贴板
+        .then(() => {
+            const message = document.getElementById('message');
+            message.innerText = 'Geek的邮箱已经复制到剪贴板了！';
+ 
+            setTimeout(() => {
+                message.innerText = ''; // 2秒后清除消息
+            }, 2000);
+        })
+    });
+    </script>
+
+ <!-- Q&A -->
+<div id="MoreQuestions" class="MoreQuestions">
+    <!-- Q&A标题 -->
+    <div class="text4">More Questions  <span style="font-size:40px;" class="iconfont icon-V"></span></div>
+    <!-- Q&A内容 -->
+    <div class="question"> 
+        <div id="q1" class="q">1.什么是Geek(极客)？Geek精神又是什么？</div>
+        <div id="a1" class="hidden"> 拥有好奇之心，改变之力，爱钻研，能折腾。</div>
+
+        <div id="q2" class="q">2.招新是安排在什么时间？</div>   
+        <div id="a2" class="hidden">按照惯例，正式招新时间是在9月下旬~10月上旬，不过今年会有一些改动，笔试地 点一般在9号教学楼。 如果想要了解我们，可以加入我们的QQ群，招新具体的安排/变动会在招新群通知。</div>
+        
+        <div id="q3" class="q">3.我们有考核吗？考核流程是怎样的呀?</div>
+        <div id="a3" class="hidden">   嗯...我们一共有一轮笔试和两轮面试。权衡技术、经验和学习能力，第一轮是一些视野性的题目，淘汰率并不高。第二轮单独面试， 根据你的笔试提出技术相关的问题、兴趣爱好、个人看法。最后一轮群面，首先问及时间分 配上的问题，其次也会向你提出各种奇怪的问题。这一轮中许多题目其实并不难，也无标准答案，重在考察同学们在压力下的逻辑思维。全部通过成为预备成员啦。</div>
+        
+        <div id="q4" class="q">4.考核是怎样的形式？</div>
+        <div id="a4" class="hidden">在考核期间每人会拥有一位'长者'带你入门，学习技术与知识，交流经验与想法。完成每周的新人任务后再进行一次考核筛选 后就可以成为Geek组正式成员啦！在考核期必须满足每周30个小时在实验室哦,所以考核期也不可以懈怠哦！</div>
+        
+        <div id="q5" class="q">5.进入Geek组之后都有什么福利呢？</div>
+        <div id="a5" class="hidden">一对一的新人指引，每一个成员都有会一个mentor, 带你初入门槛，与你一同成长，组内管理较宽松,在尊重其他人的前提下可以尽情发挥自己的个性。 打破平淡，与同样疯狂的人把疯狂的idea实现，磨砺耐性、培养思维、成就梦想。Lab设备/网络资源充足，闲暇之余也有组织活动。更有许多的故事等你来听~</div>
+        
+        <div id="q6" class="q">6.进入团队会影响我的日常学习吗？</div>
+        <div id="a6" class="hidden">你要知道大学是一个可以自由安排自己学习生活的地方。如果你想在上课之余充实自己、激励自己，最好的方法就是和比自己更优秀的人在一起。团队不缺优秀的 人，而我们也期待同样优秀的你，让我们一起前进！小组里也有不少保研, 考研的前辈们, 大部分都能找到一个平衡点, 而且团队的经历对你日后读研, 工作都大有裨益。</div>
+        
+        <div id="q7" class="q">7.老师以及学长学姐们的期望是什么?</div>
+        <div id="a7" class="hidden">我们希望你有很强的自学能力，同时关注新事物、新技术，喜欢挑战，逻辑性强，善于和各种文化的人合作.“每个人都可以做自己想做的事情，每个人的方向不一样。 如果你想做产品或有不错的 idea，那么就可以找志同道合的人一起合作。”</div>
+    </div>
+</div>
+<!-- 点击Q出现A效果 -->
+<script>
+    for (let i = 1; i <= 7; i++)
+     {
+        document.getElementById('q' + i).addEventListener('click', function() 
+        {
+            var additionalText = document.getElementById('a' + i);
+            if (additionalText.classList.contains('hidden'))
+             {
+                additionalText.classList.remove('hidden');
+                additionalText.classList.add('visible');
+            } 
+            else {
+                additionalText.classList.remove('visible');
+                additionalText.classList.add('hidden');
+            }
+        });
+    }
+</script> 
+
+</div> 
+</body>
+</html>
