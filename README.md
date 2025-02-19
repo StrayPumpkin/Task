@@ -33,7 +33,7 @@
 
 [额外思考](https://github.com/StrayPumpkin/Task/blob/master/Go%E6%98%AFoop.md)
 ## 6
-[network的前世今生]((https://github.com/StrayPumpkin/Task/blob/master/Network.md))
+[network的前世今生](https://github.com/StrayPumpkin/Task/blob/master/Network.md)
 
 [网络模型](https://github.com/StrayPumpkin/Task/blob/master/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B.md)
 
