@@ -32,3 +32,17 @@
 [godemo](https://github.com/StrayPumpkin/Task/blob/master/Godemo.go)
 
 [额外思考](https://github.com/StrayPumpkin/Task/blob/master/Go%E6%98%AFoop.md)
+## 6
+[network的前世今生](https://github.com/StrayPumpkin/Task/blob/master/Go%E6%98%AFoop.md)
+
+[网络模型](https://github.com/StrayPumpkin/Task/blob/master/Go%E6%98%AFoop.md)
+
+[TCP/IP初识](https://github.com/StrayPumpkin/Task/blob/master/Go%E6%98%AFoop.md)
+
+[http初识](https://github.com/StrayPumpkin/Task/blob/master/Go%E6%98%AFoop.md)
+
+[实践2](https://github.com/StrayPumpkin/Task/blob/master/Go%E6%98%AFoop.md)
+
+[实践3](https://github.com/StrayPumpkin/Task/blob/master/Go%E6%98%AFoop.md)
+
+[额外思考](https://github.com/StrayPumpkin/Task/blob/master/Go%E6%98%AFoop.md)
