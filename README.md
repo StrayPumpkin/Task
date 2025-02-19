@@ -43,8 +43,8 @@
 
 [Wireshark初识](https://github.com/StrayPumpkin/Task/blob/master/Wireshark.md)
 
-[实践2](https://github.com/StrayPumpkin/Task/blob/master/Go%E6%98%AFoop.md)
+[实践2](https://github.com/StrayPumpkin/Task/tree/master/TCP_Socket)
 
-[实践3](https://github.com/StrayPumpkin/Task/blob/master/Go%E6%98%AFoop.md)
+[实践3](https://github.com/StrayPumpkin/Task/tree/master/http)
 
 [额外思考](https://github.com/StrayPumpkin/Task/blob/master/%E6%9E%B6%E6%9E%84.md)
