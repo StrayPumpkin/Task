@@ -55,8 +55,8 @@
 
 [orm与gorn](https://github.com/StrayPumpkin/Task/blob/master/ORM%E4%B8%8EGorm.md)
 
-[gorm安装及配置](https://github.com/StrayPumpkin/Task/blob/master/Gorm%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.md)
+[gorm安装及配置](https://github.com/StrayPumpkin/Task/blob/master/gorm%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE.md)
 
-[gorm基本使用](https://github.com/StrayPumpkin/Task/blob/master/gorm%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE.md)
+[gorm基本使用](https://github.com/StrayPumpkin/Task/blob/master/Gorm%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.md)
 
 [实践](https://github.com/StrayPumpkin/Task/blob/master/gormproject/curd.go)
