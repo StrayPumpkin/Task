@@ -49,12 +49,14 @@
 
 [额外思考](https://github.com/StrayPumpkin/Task/blob/master/%E6%9E%B6%E6%9E%84.md)
 ## 7
-[MySQL前世今生](https://github.com/StrayPumpkin/Task/blob/master/%E6%9E%B6%E6%9E%84.md)
+[MySQL前世今生](https://github.com/StrayPumpkin/Task/blob/master/MySQL%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F.md)
 
-[orm与gorn](https://github.com/StrayPumpkin/Task/blob/master/%E6%9E%B6%E6%9E%84.md)
+[MySQL基本使用](https://github.com/StrayPumpkin/Task/blob/master/MySQL%E5%9F%BA%E6%9C%AC%E4%BD%BF%E5%BA%94%E7%94%A8.md)
 
-[gorm安装及配置](https://github.com/StrayPumpkin/Task/blob/master/%E6%9E%B6%E6%9E%84.md)
+[orm与gorn](https://github.com/StrayPumpkin/Task/blob/master/ORM%E4%B8%8EGorm.md)
 
-[gorm基本使用](https://github.com/StrayPumpkin/Task/blob/master/%E6%9E%B6%E6%9E%84.md)
+[gorm安装及配置](https://github.com/StrayPumpkin/Task/blob/master/Gorm%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.md)
 
-[实践](https://github.com/StrayPumpkin/Task/blob/master/%E6%9E%B6%E6%9E%84.md)
+[gorm基本使用](https://github.com/StrayPumpkin/Task/blob/master/gorm%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE.md)
+
+[实践](https://github.com/StrayPumpkin/Task/blob/master/gormproject/curd.go)
