@@ -48,3 +48,13 @@
 [实践3](https://github.com/StrayPumpkin/Task/tree/master/http)
 
 [额外思考](https://github.com/StrayPumpkin/Task/blob/master/%E6%9E%B6%E6%9E%84.md)
+## 7
+[MySQL前世今生](https://github.com/StrayPumpkin/Task/blob/master/%E6%9E%B6%E6%9E%84.md)
+
+[orm与gorn](https://github.com/StrayPumpkin/Task/blob/master/%E6%9E%B6%E6%9E%84.md)
+
+[gorm安装及配置](https://github.com/StrayPumpkin/Task/blob/master/%E6%9E%B6%E6%9E%84.md)
+
+[gorm基本使用](https://github.com/StrayPumpkin/Task/blob/master/%E6%9E%B6%E6%9E%84.md)
+
+[实践](https://github.com/StrayPumpkin/Task/blob/master/%E6%9E%B6%E6%9E%84.md)
